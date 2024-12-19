@@ -12,6 +12,9 @@
         display: inline-block;
         width: 200px;
       }
+      #birth-date {
+        width: 200px;
+      }
     </style>
     <title>CV Oppgave</title>
   </head>
@@ -26,6 +29,27 @@
       <input type="text" id="e-post" name="e-post" /><br /><br />
       <label for="mobil">Mobil:</label>
       <input type="text" id="mobil" name="mobil" /><br /><br />
+      <label for="født">Født:</label>
     </form>
+    <label for="day">Dag:</label>
+      <select id="day">
+        <option value="1">1</option>
+        <option value="31">31</option>
+      </select>
+      <label for="month">Måned:</label>
+        <select id="month">
+          <option value="1">1</option>
+          <option value="12">12</option>
+        </select>
+      <label for="year">År:</label>
+        <select id="year">
+          <option value="1900">1900</option>
+          <option value="2024">2024</option>
+        </select>
+        <form action="/action_page.php">
+     <label for="nøkkelkompetanse">Nøkkelkompetanse:</label>
+     <input type="text" id="nøkkelkompetanse" name="nøkkelkompetanse"><br><br>
+    </form>
+
   </body>
 </html>
