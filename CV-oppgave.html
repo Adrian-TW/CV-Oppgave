@@ -1,108 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<style>
+    table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<head>
     <style>
-      label {
-        display: inline-block;
-        width: 100px;
-        text-align: right;
-        font-size: 20px;
-      }
-      input {
-        display: inline-block;
-        width: 200px;
-      }
-      #day {
-        display: inline-block;
-        text-align: right;
-        width: 40px;
-      }
-      #month {
-        display: inline-block;
-        text-align: right;
-        width: 40px;
-      }
-      #year {
-        display: inline-block;
-        text-align: right;
-        width: 55px;
-      }
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            font-size: 20px;
+        }
+
+        input {
+            display: inline-block;
+            width: 200px;
+        }
+
+        #day {
+            display: inline-block;
+            text-align: right;
+            width: 40px;
+        }
+
+        #month {
+            display: inline-block;
+            text-align: right;
+            width: 40px;
+        }
+
+        #year {
+            display: inline-block;
+            text-align: right;
+            width: 55px;
+        }
     </style>
     <title>CV Oppgave</title>
-  </head>
-  <body style="background-color: hsl(190, 60%, 82%)">
+</head>
+<body style="background-color: hsl(190, 60%, 82%)">
     <h1 style="font-size: 250%; text-align: center">CV</h1>
     <form action="/action_page.php">
-      <label for="navn">Navn:</label>
-      <input type="text" id="navn" name="navn" /><br /><br />
-      <label for="adresse">Adresse:</label>
-      <input type="text" id="adresse" name="adresse" /><br /><br />
-      <label for="e-post">E-post:</label>
-      <input type="text" id="e-post" name="e-post" /><br /><br />
-      <label for="mobil">Mobil:</label>
-      <input type="text" id="mobil" name="mobil" /><br /><br />
-      <label for="født">Født:</label>
-    
-    <label for="day">Day:</label>
-      <select id="day">
-        <option value="1">1</option>
-        <option value="31">31</option>
-      </select>
-      <label for="month">Month:</label>
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn" /><br /><br />
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" /><br /><br />
+        <label for="e-post">E-post:</label>
+        <input type="text" id="e-post" name="e-post" /><br /><br />
+        <label for="mobil">Mobil:</label>
+        <input type="text" id="mobil" name="mobil" /><br /><br />
+        <label for="født">Født:</label>
+
+        <label for="day">Day:</label>
+        <select id="day">
+            <option value="1">1</option>
+            <option value="31">31</option>
+        </select>
+        <label for="month">Month:</label>
         <select id="month">
-          <option value="1">1</option>
-          <option value="12">12</option>
+            <option value="1">1</option>
+            <option value="12">12</option>
         </select>
-      <label for="year">Year:</label>
+        <label for="year">Year:</label>
         <select id="year">
-          <option value="1900">1900</option>
-          <option value="2024">2024</option>
+            <option value="1900">1900</option>
+            <option value="2024">2024</option>
         </select>
-      </form>
+    </form>
     <b style="font-size: 22px; text-align: left;">Nøkkelkompetanse:</b>
-      <textarea style="width: 500px; height: 250px;" ></textarea>
-      <style>
+    <textarea style="width: 500px; height: 250px;"></textarea>
+    <style>
         b {
-          display: inline-block;
-          margin-top: 80px;
+            display: inline-block;
+            margin-top: 80px;
         }
+
         textarea {
-          display: block;
-          margin-top: 5px;
+            display: block;
+            margin-top: 5px;
         }
-      </style>
-<b style="font-size: 20px; margin-bottom: 15px; text-align: left;">Utdannelse</b><br>
+    </style>
+    <b style="font-size: 20px; margin-bottom: 15px; text-align: left;">Utdannelse</b><br>
     <table>
-      <tr>
-        <th>År</th>
-        <th>Skole</th>
-        <th>Studieretning</th>
-      </tr>
-      <tr>
-        <th><input style="width: 70px;" type="text" id="år"></th>
-        <th><input style="width: 150px;" type="text" id="Skole"></th>
-        <th><input style="width: 170px;" type="text" id="Studieretning"></th>
-      </tr>
-      <tr>
-        <th>År</th>
-        <th>Skole</th>
-        <th>Studieretning</th>
-      </tr>
-      <tr>
-        <th><input style="width: 70px;" type="text" id="år"></th>
-        <th><input style="width: 150px;" type="text" id="Skole"></th>
-        <th><input style="width: 170px;" type="text" id="Studieretning"></th>
-      </tr>
+        <tr>
+            <th>År</th>
+            <th>Skole</th>
+            <th>Studieretning</th>
+        </tr>
+        <tr>
+            <th><input style="width: 70px;" type="text" id="år"></th>
+            <th><input style="width: 150px;" type="text" id="Skole"></th>
+            <th><input style="width: 170px;" type="text" id="Studieretning"></th>
+        </tr>
+        <tr>
+            <th><input style="width: 70px;" type="text" id="år"></th>
+            <th><input style="width: 150px;" type="text" id="Skole"></th>
+            <th><input style="width: 170px;" type="text" id="Studieretning"></th>
+        </tr>
+        <tr>
+            <th><input style="width: 70px;" type="text" id="år"></th>
+            <th><input style="width: 150px;" type="text" id="Skole"></th>
+            <th><input style="width: 170px;" type="text" id="Studieretning"></th>
+        </tr>
     </table>
-<b style="font-size: 20px; margin-bottom: 15px; text-align: left;">Jobberfaring</b>
-<textarea style="width: 500px; height: 200px;" ></textarea>
-<b style="font-size: 20px; margin-bottom: 15px; text-align: left;">Kurs</b>
-      <table>
-          <tr>
-              <th>År</th>
-              <th>Sted</th>
-              <th></th>
-          </tr>
-      </table>
-  </body>
+    <b style="font-size: 20px; margin-bottom: 15px; text-align: left;">Jobberfaring</b>
+<textarea style="width: 500px; height: 200px;"></textarea>
+    <b style="font-size: 20px; margin-bottom: 15px; text-align: left;">Kurs/Etterutdannelse</b>
+    <table>
+        <tr>
+            <th>År</th>
+            <th>Sted</th>
+            <th>Kurs</th>
+        </tr>
+        <tr>
+            <th><input style="width: 70px;" type="text" id="år"></th>
+            <th><input style="width: 150px;" type="text" id="Sted"></th>
+            <th><input style="width: 170px;" type="text" id="Kurs"></th>
+        </tr>
+        <tr>
+            <th><input style="width: 70px;" type="text" id="år"></th>
+            <th><input style="width: 150px;" type="text" id="Sted"></th>
+            <th><input style="width: 170px;" type="text" id="Kurs"></th>
+        </tr>
+        <tr>
+            <th><input style="width: 70px;" type="text" id="år"></th>
+            <th><input style="width: 150px;" type="text" id="Sted"></th>
+            <th><input style="width: 170px;" type="text" id="Kurs"></th>
+        </tr>
+    </table>
+    <b style="font-size: 20px; margin-bottom: 15px; text-align: left;">Andre opplysninger</b>
+    <table>
+        <tr>
+            <th>Språk</th>
+            <th>Sertifisering</th>
+            <th>Interesser</th>
+        </tr>
+
+    </table>
+</body>
 </html>
